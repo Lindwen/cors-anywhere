@@ -1,3 +1,33 @@
+[![Create and publish a Docker image](https://github.com/Lindwen/cors-anywhere/actions/workflows/build-push.yml/badge.svg)](https://github.com/Lindwen/cors-anywhere/actions/workflows/build-push.yml)
+
+## Installation
+
+### With docker run:
+
+```bash
+docker run -it --rm -p 8080:8080 --name cors-anywhere ghcr.io/lindwen/cors-anywhere:master 
+```
+
+### With docker compose:
+ref: [docker-compose.yml](docker-compose.yml)
+```yml
+---
+version: '3'
+
+services:
+
+  cors-anywhere:
+    image: docker pull ghcr.io/lindwen/cors-anywhere:master
+    container_name: cors-anywhere
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+```
+
+
+
+-----------------------------------------
+
 [![Build Status](https://travis-ci.com/Rob--W/cors-anywhere.svg?branch=master)](https://travis-ci.com/Rob--W/cors-anywhere)
 [![Coverage Status](https://coveralls.io/repos/github/Rob--W/cors-anywhere/badge.svg?branch=master)](https://coveralls.io/github/Rob--W/cors-anywhere?branch=master)
 
