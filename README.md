@@ -5,7 +5,7 @@
 ### With docker run:
 
 ```bash
-docker run -it --rm -p 8080:8080 --name cors-anywhere ghcr.io/lindwen/cors-anywhere:master 
+docker run -itd --rm -p 8080:8080 --name cors-anywhere ghcr.io/lindwen/cors-anywhere:master 
 ```
 
 ### With docker compose:
