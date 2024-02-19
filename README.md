@@ -5,7 +5,7 @@
 ### With docker run:
 
 ```bash
-docker run -itd --rm -p 8080:8080 --name cors-anywhere ghcr.io/lindwen/cors-anywhere:latest
+docker run -itd --rm -p 8080:8080 --name cors-anywhere ghcr.io/lindwen/cors-anywhere:master
 ```
 
 ### With docker compose:
@@ -17,7 +17,7 @@ version: '3'
 services:
 
   cors-anywhere:
-    image: docker pull ghcr.io/lindwen/cors-anywhere:latest
+    image: docker pull ghcr.io/lindwen/cors-anywhere:master
     container_name: cors-anywhere
     restart: unless-stopped
     ports:
