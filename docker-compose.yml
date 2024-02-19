@@ -1,0 +1,11 @@
+---
+version: '3'
+
+services:
+
+  cors-anywhere:
+    image: docker pull ghcr.io/lindwen/cors-anywhere:master
+    container_name: cors-anywhere
+    restart: unless-stopped
+    ports:
+      - 8080:8080
